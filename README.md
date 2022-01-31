@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Install and configure Photon OS on 1blu root server
 
-You can use the [editor on GitHub](https://github.com/cybaspace/docu-test/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Root servers of the german provider 1blu are a perfect match to run a docker host on it - they are cheap and has enough power.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+If you follow the steps you have a running docker host afterwards:
 
-### Markdown
+1. Assume you have already a 1blu root server - smallest size can already be perfect for testing and developing.
+2. Download the minimal ISO of actual version (at the moment it's 4.0 GA): https://github.com/vmware/photon/wiki/Downloading-Photon-OS
+3. In 1blu customer self service (Kundenservicebereich) goto "Meine Produkte", select your root server and choose _Administration_
+4. Under _ISO-Image_ you will find URL and credentials for FTP server
+5. Upload Photon OS iso image to FTP server
+6. Rename iso image to _boot.iso_
+7. In 1blu customer self service under your root server switch to "Übersicht"
+8. Under _Server_ click to _DVD_ for "Booten von:"
+9. Press _Neustart_ under "Betriebssystem" - don't be irritated if their stands something like "Ubuntu" - this is the preinstalled OS on harddisk, but you changed to Virtual DVD
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cybaspace/docu-test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
